@@ -44,9 +44,7 @@ public class RunHH01 {
 			return;
 		}
 		StringBuffer results = new StringBuffer("");
-		Collections.shuffle(campaigns);
 		AtomicInteger counter = new AtomicInteger(0);
-		System.out.println(new Date() + " counter: " + counter.get());
 		try (BufferedReader br = new BufferedReader(new FileReader(FILENAME_INPUTS))) {
 			for (String line; (line = br.readLine()) != null;) {
 				List<Integer> inputSegments = FileReaderUtils.readInput(line);
